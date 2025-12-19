@@ -57,18 +57,6 @@ Results are returned in real time and stored in the database
 
 User views insights, progress, and meal history through the app
 
-📦 Installation & Setup
-Backend
-git clone https://github.com/your-username/neutrivision.git
-cd neutrivision/backend
-pip install -r requirements.txt
-python app.py
-
-Frontend
-cd neutrivision/mobile
-npm install
-npx react-native run-android   # or run-ios
-
 📊 Model Overview
 
 Lightweight Convolutional Neural Network (CNN)
@@ -99,7 +87,3 @@ Integration with fitness trackers
 
 Personalized meal recommendations using user behavior
 
-👩‍💻 Author
-
-Farah Gaaloul
-📧 farahgaaloul812@gmail.com
