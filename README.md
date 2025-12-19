@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+🥗 NeutriVision: Intelligent Calorie Estimation
 
-## Project info
+NeutriVision is a smart nutrition tracking mobile application that estimates calories and macronutrients from food images using deep learning. The app helps users monitor daily intake, set calorie goals, and visualize dietary progress through an intuitive interface.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+📅 Project Date
 
-## How can I edit this code?
+May 2024
 
-There are several ways of editing your application.
+🚀 Features
 
-**Use Lovable**
+📸 Food Image Analysis
+Upload or capture food images to automatically estimate calories and macronutrients using a lightweight CNN model.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🧠 AI-Powered Nutrition Estimation
+Deep learning–based image classification predicts nutritional values in real time.
 
-Changes made via Lovable will be committed automatically to this repo.
+👤 User Profile Management
+Create and manage personalized profiles with daily calorie goals.
 
-**Use your preferred IDE**
+🍽️ Meal Logging & History
+Track meals, view daily intake, and analyze eating patterns over time.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📊 Progress Visualization
+Visual charts and summaries to monitor calorie consumption and nutritional balance.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📚 Food Database Exploration
+Browse food items and manage personalized diet plans.
 
-Follow these steps:
+🛠️ Tech Stack
+Frontend
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+React Native – Cross-platform mobile application development
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Backend
 
-# Step 3: Install the necessary dependencies.
-npm i
+Python
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Flask – RESTful API for image processing and predictions
 
-**Edit a file directly in GitHub**
+Machine Learning
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+TensorFlow – Lightweight CNN model for food image analysis
 
-**Use GitHub Codespaces**
+Database
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+SQLite – User data, meal history, and nutrition records
 
-## What technologies are used for this project?
+🏗️ System Architecture
 
-This project is built with:
+User captures or uploads a food image via the mobile app
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Image is sent to the Flask backend API
 
-## How can I deploy this project?
+CNN model processes the image and predicts calories and macronutrients
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Results are returned in real time and stored in the database
 
-## Can I connect a custom domain to my Lovable project?
+User views insights, progress, and meal history through the app
 
-Yes, you can!
+📦 Installation & Setup
+Backend
+git clone https://github.com/your-username/neutrivision.git
+cd neutrivision/backend
+pip install -r requirements.txt
+python app.py
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Frontend
+cd neutrivision/mobile
+npm install
+npx react-native run-android   # or run-ios
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📊 Model Overview
+
+Lightweight Convolutional Neural Network (CNN)
+
+Optimized for mobile and real-time inference
+
+Trained on labeled food image datasets
+
+Outputs estimated:
+
+Calories
+
+Carbohydrates
+
+Proteins
+
+Fats
+
+🔮 Future Enhancements
+
+Barcode scanning for packaged foods
+
+Multi-food detection in a single image
+
+Cloud-based model updates
+
+Integration with fitness trackers
+
+Personalized meal recommendations using user behavior
+
+👩‍💻 Author
+
+Farah Gaaloul
+📧 farahgaaloul812@gmail.com
